@@ -8,9 +8,10 @@ from handlers.cinema import router as cinema_router
 
 # Подключаем встроенную в python библиотеку для веб-серверов
 from aiohttp import web
+ 
+# Он просит систему: "Дай мне секретные данные под именем BOT_TOKEN"
+TOKEN = os.environ.get("BOT_TOKEN")
 
-# Токен бота
-TOKEN = "8944612722:AAFqmQQkMp2JdUojwp83kFIjwCX6LeXmklk"
 
 # Специальная функция-заглушка для Render.com
 # Когда Render или Cron-Job будут заходить на нашу страницу, мы будем отвечать "OK"
